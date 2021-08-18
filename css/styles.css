@@ -888,15 +888,12 @@ footer i {
   .modal {
     width: 83.5vw;
     height: 30vh;
-    margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
   }
   .modal h2 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   .modal article {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   .offer__div button {
     position: relative;
@@ -904,7 +901,6 @@ footer i {
     margin-top: 1em;
     width: 8em;
     margin: 2em 1em;
-    /* padding-bottom: 0; */
     font-size: 0.8em;
   }
 
