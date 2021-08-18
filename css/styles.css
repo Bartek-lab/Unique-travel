@@ -673,10 +673,8 @@ footer i {
   .modal {
     width: 60vw;
     height: 35vh;
-    margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
   }
+  
   .modal h2 {
     margin-top: 2vh;
   }
