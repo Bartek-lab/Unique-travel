@@ -13,7 +13,7 @@ const modal = document.querySelectorAll(".modal");
 const details_button = document.querySelectorAll(".details_button");
 const close_button = document.querySelectorAll(".close_button");
 
-console.log(modal);
+////////////       STICKY NAVIGATION      /////////////
 
 const stickyNav = function (entries) {
   const [entry] = entries;
@@ -24,9 +24,6 @@ const stickyNav = function (entries) {
     nav.classList.remove("sticky");
   }
 };
-
-console.log(menu__links);
-
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
   treshold: 0,
@@ -34,6 +31,8 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 });
 
 headerObserver.observe(header);
+
+////////////       MOBILE MENU     /////////////
 
 hamburger.addEventListener("click", function () {
   menu.classList.toggle("mobile_menu");
@@ -49,6 +48,8 @@ menu.addEventListener("click", function (e) {
   menu.classList.remove("mobile_menu");
 });
 
+////////////       SLIDER GALLERY    /////////////
+
 let curSlide = 0;
 const maxSlide = slides.length;
 
@@ -58,8 +59,6 @@ const goToSlide = function () {
   );
 };
 goToSlide(0);
-
-// slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
 
 const nextSlide = function () {
   if (curSlide === maxSlide - 1) {
@@ -82,6 +81,8 @@ const prevSlide = function () {
 
 btnRight.addEventListener("click", nextSlide);
 btnLeft.addEventListener("click", prevSlide);
+
+////////////       MODAL WINDOWS        /////////////
 
 details_button.forEach((e, i) => {
   e.addEventListener("click", () => modal[i].classList.add("active_modal"));
