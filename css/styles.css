@@ -1,0 +1,936 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+/* ------------------------- NAVIGATION SECTION ----------------------------- */
+nav {
+  height: 70px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sticky {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  background-color: coral;
+  opacity: 0.8;
+  z-index: 10;
+  transition: 1s;
+}
+
+h2 {
+  margin: 2vh 0 0 1vw;
+  white-space: nowrap;
+  font-family: Poppins, sans-serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  color: black;
+}
+.logo__div {
+  padding: 1vh 0 0vh 2vw;
+  height: 70px;
+  width: 6vw;
+  display: flex;
+  filter: brightness(1) invert(1);
+}
+
+.menu {
+  padding: 2.5vh 0 2vh 2vw;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.menu li {
+  padding: 0.5vh 2vw;
+}
+
+.menu li a:hover {
+  border-bottom: solid white;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-family: Poppins, serif;
+  font-size: 1em;
+  color: white;
+}
+
+.menu__bars {
+  display: none;
+  z-index: 10;
+}
+
+/* ------------------------------------ SECTION 1 LANDING PAGE ----------------------------- */
+.title {
+  margin: 25vh 20vh;
+  font-size: 2em;
+  font-family: Libre Baskerville, sans-serif;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+#background {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.section__1 {
+  background-image: url(desktop__1.png);
+  min-height: 500px;
+}
+
+/* ------------------------------------ SECTION 2    ABOUT US     ----------------------------- */
+.section__2 {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.second_title {
+  margin-top: -15vh;
+  padding-bottom: 2vh;
+  text-align: left;
+  font-size: 2rem;
+  font-family: Libre Baskerville, sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+.second_container {
+  width: 20%;
+  height: 70%;
+  margin: 20vh 4vw;
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  color: black;
+  font-size: 1rem;
+  justify-content: center;
+}
+
+.section__2 img {
+  width: 20%;
+  height: 70%;
+  margin: 14vh 0vw 0 0;
+}
+.section__2 span {
+  height: 0.2rem;
+  width: 5rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  background-color: coral;
+}
+
+/* ------------------------------------ SECTION 3 DISCOUNT INFORMATION ----------------------------- */
+
+.section__3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("discount__image.png");
+  height: 33vh;
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section__3 h1 {
+  margin: auto;
+  font-family: Libre Baskerville, sans-serif;
+  color: white;
+  font-size: 2em;
+  word-spacing: 0.6vw;
+  text-align: center;
+  align-items: center;
+  filter: brightness(100%);
+}
+
+/* ------------------------------------ SECTION 4 SWIPE GALLERY ----------------------------- */
+
+.section__4 {
+  text-align: center;
+  width: 100%;
+  /* height: 90vh; */
+  min-height: 600px;
+}
+
+.section__4 h1 {
+  margin-top: 0;
+  padding-top: 9vh;
+  font-size: 2em;
+  font-family: Libre Baskerville, sans-serif;
+  font-weight: 600;
+  color: black;
+}
+.section__4 article {
+  margin-top: 3vh;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  color: black;
+  font-size: 16px;
+}
+.line {
+  margin: auto;
+  margin-top: 1.5rem;
+  height: 0.2rem;
+  width: 5rem;
+  border-radius: 20px;
+  background-color: coral;
+  align-self: center;
+}
+
+.section__4__container {
+  margin: 0 auto;
+  width: 50%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+.slide {
+  width: 100%;
+  height: 80vh;
+  min-height: 350px;
+  position: absolute;
+  display: flex;
+  transition: transform 1s;
+  justify-content: center;
+}
+
+.section__4__container img {
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+.slider__btn {
+  height: 2.5rem !important;
+  width: 3rem !important;
+  margin-top: 40vh !important;
+  z-index: 1;
+  position: absolute;
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  font-size: 1.25rem;
+  color: #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+  padding-left: 0.5rem;
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+  padding-right: 0.5rem;
+}
+
+/* ------------------------------------ SECTION 5 OFFERS ----------------------------- */
+
+.section__5 {
+  display: block;
+  height: 100%;
+  min-height: min-content;
+}
+
+.offer_text {
+  margin: auto;
+  font-size: 1.4em;
+  font-family: Libre Baskerville, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+}
+
+.offer_text article {
+  margin-top: 3vh;
+  text-align: center;
+  justify-self: center;
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: black;
+}
+
+.line_2 {
+  margin: auto;
+  margin-bottom: 8vh;
+  margin-top: 3vh;
+  height: 0.2rem;
+  width: 5rem;
+  border-radius: 20px;
+  background-color: coral;
+}
+.section__5 img {
+  height: 100%;
+  width: 70%;
+  overflow: hidden;
+}
+.offer__section {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.offer__div {
+  margin: 5vh 4vh 5vh;
+  height: 27vh;
+  min-height: 200px;
+  width: 27vw;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 13px;
+}
+
+.offer__div h3 {
+  margin-top: -5vh;
+  padding-right: 0.5vw;
+  padding-bottom: 2vh;
+  font-size: 1em;
+  font-family: Libre Baskerville, sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+.offer__div ul {
+  padding: 0;
+  margin: auto;
+  list-style: none;
+}
+
+.offer__div li {
+  margin-bottom: 0.6em;
+  text-align: center;
+  justify-self: center;
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  font-size: 0.8em;
+  color: black;
+}
+.offer__section button {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 15px;
+  color: white;
+  background-color: coral;
+  outline: none;
+  border: none;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+.details_button {
+  width: 5rem;
+  height: 1.5rem;
+  margin-top: 2vh;
+}
+.modal {
+  margin: auto;
+  height: 27vh;
+  width: 27vw;
+  background-color: white;
+  visibility: hidden;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  border-radius: 10px;
+  min-height: 200px;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+.modal_window h2 {
+  margin: 0;
+  padding-top: 3vh;
+  padding-bottom: 1vh;
+  font-size: 1em;
+  font-family: Libre Baskerville, sans-serif;
+  font-weight: 600;
+  color: black;
+}
+.modal button {
+  width: 10em;
+  height: 2em;
+  position: relative;
+}
+button:hover {
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.modal article {
+  margin-top: 2vh;
+  padding: 0vh 2vw 2vh;
+  text-align: center;
+  font-size: 0.8em;
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+}
+
+.active_modal {
+  visibility: visible;
+  opacity: 1;
+}
+/* ------------------------------------ FOOTER ----------------------------- */
+
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("footer_background.png");
+  height: 35vh;
+  min-height: 270px;
+  margin-top: 10vh;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  color: white;
+}
+.contact_us {
+  padding: 3vh 0 0 0;
+  margin-left: 6vw;
+  font-family: Poppins, sans-serif;
+}
+.footer_row {
+  margin-top: 0.5vh;
+  margin-left: 6vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icons {
+  margin: 5vh 11vw 0 0;
+  padding-right: 5vw;
+  font-size: 40px;
+  cursor: pointer;
+}
+footer ul {
+  padding-top: 1vh;
+}
+footer li {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  list-style: none;
+  margin: auto;
+  padding-top: 3vh;
+  text-align: left;
+  cursor: pointer;
+}
+.second__col {
+  margin-left: 10vw;
+}
+footer i {
+  margin-right: 1vw;
+}
+
+/* ------------------------------------ MEDIA QUERIES ----------------------------- */
+
+@media only screen and (max-width: 1100px) {
+  .title {
+    margin: auto;
+    margin-top: 30vh;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .nav {
+    height: 100px;
+  }
+
+  .logo__div h2 {
+    margin-top: 1.3vh;
+    padding: 0;
+  }
+  .logo__div {
+    height: 80px;
+    width: 7%;
+    font-size: 1.3em;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+  .menu {
+    padding-top: 0.8vh;
+  }
+  .menu li {
+    font-size: 1.2em;
+    margin-top: 0.1vh;
+  }
+
+  .section__2 img {
+    display: none;
+  }
+  .section__2 {
+    height: 80vh;
+  }
+  .second_title {
+    text-align: center;
+    font-size: 2em;
+  }
+  .second_container {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    font-size: 1.5rem;
+  }
+  .second_container span {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 5vh;
+  }
+  .section__3 {
+    font-size: 1.3rem;
+  }
+  .section__4 {
+    min-height: 650px;
+  }
+
+  .section__4 h1 {
+    font-size: 2.7rem;
+  }
+  .section__4 article {
+    font-size: 1.5rem;
+    padding: 0 10vw;
+  }
+
+  .section__4__container {
+    width: 70%;
+    height: 60vh;
+  }
+  .slider__btn {
+    margin-top: 35vh !important;
+  }
+  .section__5 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section__5 h1 {
+    margin: 10vh 0 0 5vh;
+    font-size: 3rem;
+  }
+  .section__5 article {
+    font-size: 1.5rem;
+    padding: 0 10vw;
+  }
+
+  .offer__section {
+    flex-direction: row;
+  }
+  .offer__div {
+    width: 35vw;
+    height: 25vh;
+    font-size: 2rem;
+  }
+  .offer__div h3 {
+    font-size: 1.3rem;
+  }
+  .offer__div li {
+    font-size: 0.9rem;
+    padding-bottom: 1em;
+    /* margin-top: 1em; */
+  }
+  .details_button button {
+    width: 12em;
+    height: 4em;
+    position: relative;
+  }
+  .modal {
+    width: 35vw;
+    height: 25vh;
+  }
+
+  .modal h2 {
+    font-size: 0.6em;
+    padding-top: 1vh;
+  }
+  .modal article {
+    font-size: 0.4em;
+    margin-top: 2vh;
+    padding: 1vw;
+    margin-bottom: 0.5vh;
+  }
+  footer h3 {
+    font-size: 1.5em;
+  }
+  footer li {
+    font-size: 1.2em;
+  }
+  .icons {
+    font-size: 3.5em;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .section__2 img {
+    display: none;
+  }
+
+  .second_title {
+    text-align: center;
+  }
+  .menu {
+    display: none;
+  }
+  .logo {
+    margin-bottom: 1vh;
+    width: 60px;
+  }
+
+  .menu__bars {
+    display: block;
+    height: 35px !important;
+    margin-top: 1.5vh;
+    margin-right: 1vh;
+    width: 10%;
+    z-index: 25;
+    filter: brightness(100%) invert(1);
+  }
+  .mobile_menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    background-color: coral;
+    z-index: 20;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in;
+    min-height: 0;
+  }
+
+  .mobile_menu_active {
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .mobile_menu li {
+    padding: 5vh;
+  }
+
+  .second_container {
+    width: 70%;
+    text-align: center;
+    display: flex;
+  }
+  .second_container span {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 5vh;
+  }
+  .section__3 h1 {
+    padding: 0 5vh;
+  }
+  .section__4 {
+    height: 90vh;
+    min-height: 1000px !important;
+  }
+
+  .section__5 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .offer__section {
+    flex-direction: column;
+  }
+
+  .offer__div {
+    width: 60vw;
+    height: 35vh;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .modal {
+    width: 60vw;
+    height: 35vh;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .modal h2 {
+    margin-top: 2vh;
+  }
+
+  .modal article {
+    margin-top: 5vh;
+  }
+  .modal button {
+    margin-top: 5vh;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    min-width: 100%;
+  }
+  .contact_us {
+    text-align: center;
+    margin-left: 0;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  footer li {
+    justify-content: center;
+  }
+
+  .second__col {
+    margin: 0;
+    padding: 0;
+  }
+  .footer_row {
+    height: 70%;
+    justify-content: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .second__col {
+    margin-top: 3vh;
+  }
+  footer h3 {
+    margin: 0;
+  }
+  .icons {
+    padding: 0;
+    justify-content: center;
+    margin: 5vh 0 7vh 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 1.5em !important;
+  }
+  .section__1 img {
+    height: 3em;
+    width: 3.5em;
+  }
+
+  .logo__div {
+    padding-top: 1vh;
+  }
+
+  .logo__div h2 {
+    margin-top: 2.2vh !important;
+    font-size: 0.8em !important;
+  }
+  .menu {
+    display: none;
+  }
+
+  .menu__bars {
+    display: block;
+    height: 35px !important;
+    margin: 2.4vh 2vh;
+    filter: brightness(100%) invert(1);
+  }
+  .mobile_menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: coral;
+    z-index: 10;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile_menu li {
+    padding: 5vh;
+  }
+
+  .section__1 h2 {
+    font-size: 0.7em;
+    margin: auto;
+  }
+  .title {
+    font-size: 2em;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 25vh;
+    padding: 0 5vw;
+  }
+
+  .section__2 {
+    height: 80vh;
+  }
+  .section__2 h1 {
+    font-size: 1em;
+  }
+  .section__2 article {
+    font-size: 0.6em;
+  }
+
+  .second_container {
+    width: 80%;
+  }
+  .section__2 img {
+    display: none;
+  }
+  .section__3 h1 {
+    font-size: 1.5em;
+  }
+
+  .section__4 h1 {
+    font-size: 1.3em;
+    padding: 5vh 5vw 5vw 5vw;
+  }
+  .section__4 article {
+    font-size: 0.8rem;
+    margin-top: 2vh;
+    padding: 0 5vw;
+  }
+
+  .section__4 {
+    height: 85vh;
+    min-height: 500px !important;
+  }
+
+  .section__4__container {
+    width: 80vw;
+  }
+
+  .section__4__container img {
+    width: 100%;
+    height: 50%;
+  }
+  .slider__btn {
+    margin-top: 27vh !important;
+    height: 2rem !important;
+    width: 2rem !important;
+  }
+  .slider__btn--left {
+    left: 10%;
+  }
+  .slider__btn--right {
+    right: 10%;
+  }
+
+  .section__5 h1 {
+    font-size: 1.1em;
+    margin: auto;
+    margin-top: 3vh;
+    padding: 0 3vh;
+  }
+  .section__5 article {
+    font-size: 0.6em;
+    margin-top: 3vh;
+    padding: 0 5vw;
+  }
+  .section__5 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 0;
+  }
+  .offer__section {
+    flex-direction: column;
+  }
+  .offer__section h3 {
+    font-size: 1.4em;
+    margin-top: 1.5vh;
+    margin-bottom: 3vh;
+    padding-bottom: 0;
+    margin-left: 1em;
+  }
+  .offer__section ul {
+    font-size: 0.9em;
+    padding-bottom: 0;
+    margin-bottom: 0vh;
+    margin-top: 0;
+  }
+  .offer__section li {
+    font-size: 1em;
+    padding-bottom: 0;
+    margin-bottom: 1vh;
+  }
+
+  .offer__div {
+    width: 83vw;
+    height: 30vh;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 0.9em;
+  }
+
+  .modal {
+    width: 83.5vw;
+    height: 30vh;
+  }
+  .modal h2 {
+    font-size: 1.1em;
+  }
+  .modal article {
+    font-size: 0.8em;
+  }
+  .offer__div button {
+    position: relative;
+    margin: auto;
+    margin-top: 1em;
+    width: 8em;
+    margin: 2em 1em;
+    font-size: 0.8em;
+  }
+
+  footer h3 {
+    font-size: 1.2em;
+  }
+  footer li {
+    font-size: 1em;
+  }
+  .icons {
+    font-size: 2.5em;
+    padding: 0 5vh;
+  }
+}
