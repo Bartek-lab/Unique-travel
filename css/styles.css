@@ -363,7 +363,7 @@ img {
 .modal {
   margin: auto;
   height: 27vh;
-  width: 27vw;
+  width: 27.5vw;
   background-color: white;
   visibility: hidden;
   text-align: center;
@@ -570,7 +570,7 @@ footer i {
     position: relative;
   }
   .modal {
-    width: 35vw;
+    width: 35.5vw;
     height: 25vh;
   }
 
@@ -682,11 +682,9 @@ footer i {
     margin-bottom: 5vh;
   }
   .modal {
-    width: 60vw;
+    width: 60.6vw;
     height: 35vh;
     margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
   }
   .modal h2 {
     margin-top: 2vh;
