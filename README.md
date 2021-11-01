@@ -28,6 +28,8 @@ I improved things like :
 
 I will gladly take any word of constructive criticism.
 
+Link to check the website: https://peaceful-wing-9d34ed.netlify.app/
+
 Enjoy!
 
 Bartek Benedyczak
